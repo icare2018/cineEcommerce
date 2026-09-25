@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HmShop | GADGET &amp; LAPTOP Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">🎬 HM<span>Shop</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search Gargets..." />
+          <button id="searchBtn" aria-label="Search">🔍</button>
+        </div>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Your One-Stop <span>Gadgets</span> Store</h1>
+      <p>Reach out to us via whatsapp now: +234 802 440 555 2, +234 806 828 947 8<br>Hewlet Pack, collections, and exclusive merchandise for every Tech Developers and user.</p>
+      <a href="#shop" class="btn btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES QUICK NAV ===== -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2 class="section-title">Browse Categories</h2>
+      <div class="category-list">
+        <button class="category-chip active" data-category="all">All</button>
+        <button class="category-chip" data-category="dell">Dell</button>
+        <button class="category-chip" data-category="mac">Mac</button>
+        <button class="category-chip" data-category="hp">Hp</button>
+        <button class="category-chip" data-category="samsung">Samsung</button>
+        <button class="category-chip" data-category="lenonvo">Lenonvo</button>
+        
+        <img src="elite.jpg" alt="Elitebook Touchscreen">
+            <h2>Elitebook 840 G6 Touchscreen<br>Core i7, 16/512 SSD,<br>8th GEN, 14 inches</h2>
+        <img src="elite2.jpg" alt="Elitebook ordinary">
+            <h2>Elitebook 840 G6 Ordinary<br>Core i7, 8/256 SSD,<br>8th GEN, 14 inches</h2>
+        <img src="elite3.jpg" alt="Elitebook" ordinary>
+            <h2>Elitebook 840 G6 Ordinary<br>Core i7, 8/256 SSD,<br>8th GEN, 14 inches</h2>
+        <img src="probook.jpg" alt="Probook" G5>
+            <h2>Probook 640 G5 Ordinary<br>Core i5, 16/512 SSD,<br>8th GEN, 14 inches</h2>
+        <img src="probook2.jpg" alt="probook" G5>
+            <h2>Probook 640 G5 Ordinary<br>Core i5, 8/256 SSD,<br>8th GEN, 14 inches</h2>
+        <img src="dell.jpg" alt="Latitude" 7320>
+            <h2>Latitude 7320<br>Core i5, 16/512 SSD,<br>11th GEN, 14 inches</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP / PRODUCT GRID ===== -->
+  <section id="shop" class="shop">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-grid" id="productGrid">
+        <!-- Product cards injected by script.js -->
+      </div>
+      <p class="no-results" id="noResults" hidden>No products match your search.</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2 class="section-title">About HmShop</h2>
+      <p>HmShop is a passion store for ICT and Gadget lovers, bringing you the best in physical media,
+        limited-edition collectibles, and fan merchandise. We curate every product with care so
+        your collection always looks great on the shelf.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <p class="form-status" id="formStatus"></p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 HmShop. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
